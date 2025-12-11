@@ -1,0 +1,41 @@
+.rooms-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.room-card {
+  background: #111;
+  padding: 18px;
+  border-radius: 14px;
+  color: white;
+  border: 1px solid #333;
+}
+
+.device-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.device-card {
+  width: 120px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.device-card.on {
+  background: #12d640;
+}
+
+.device-card.off {
+  background: #d62828;
+}
+
+.device-card:hover {
+  transform: scale(1.05);
+}
